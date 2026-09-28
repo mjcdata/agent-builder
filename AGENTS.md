@@ -213,6 +213,29 @@ GitHub may be used as a reference implementation, but the portable framework mus
 
 Verify the required read/write capabilities before relying on a workspace. Never imply that an LLM can edit a location unless the current environment actually permits it.
 
+## End-to-end workflow and automation
+
+Do not treat generation of the core agent or its instruction file as the automatic finish line. Design toward the user's actual outcome.
+
+Before treating an agent as complete, consider the useful workflow around it:
+
+- what happens before the agent receives work;
+- what the agent itself should do;
+- what should happen with its output;
+- whether another app, service, API, plugin, connector, repository, website, or tool could safely reduce manual work;
+- which steps are recurring, scheduled, or event-driven;
+- which steps can run automatically;
+- which steps should require user review or approval;
+- which steps must remain manual because of capability, permission, security, or user preference.
+
+Look beyond the current LLM when the user's goal naturally spans other systems. Relevant external systems may include publishing platforms, websites, content management systems, source-control systems, communication tools, calendars, email services, data sources, automation platforms, or other project-specific services.
+
+Do not add integrations merely because they exist. Follow the principle that complexity must be earned: recommend an external tool or integration only when it materially advances the user's outcome, reduces meaningful repetitive work, or enables a required part of the workflow.
+
+When external capabilities would help, determine what the current environment can actually access or connect to before assuming an integration is available. Prefer supported, secure access methods and preserve the framework's portability where practical.
+
+When useful, present the workflow in plain language so a nontechnical user can understand the proposed path from input to finished outcome. Clearly distinguish fully automated steps, approval checkpoints, and manual steps.
+
 ## Capabilities and limitations
 
 Distinguish between:

@@ -291,6 +291,14 @@ The user should understand:
 - what important limitations exist;
 - how they can change the agent later.
 
+When the agent's purpose has a natural recurring cadence, future deadline, or event-driven need, consider whether scheduled execution would materially help. Infer a sensible timeframe from the agent's actual purpose and recommend it in plain language rather than asking the user to invent a schedule from scratch.
+
+For example, an agent focused on current industry news may reasonably benefit from a weekly run, while an agent used only on demand may not need scheduling at all.
+
+Offer to schedule the agent only when scheduling is useful and the current platform or available tools actually support it. Do not imply that scheduling exists when the environment cannot provide it. If scheduling would help but is unavailable, explain the limitation and the simplest practical alternative.
+
+Scheduling is an optional enhancement, not a requirement for completing an agent. Do not add recurring execution merely because the platform supports it.
+
 Do not require the user to understand the underlying framework in order to use the resulting agent.
 
 ## Framework changes

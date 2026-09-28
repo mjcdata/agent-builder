@@ -126,7 +126,7 @@ The contextual question should sound natural and should make clear what the user
 
 ## Agent blueprint
 
-Once discovery is sufficient, summarize the proposed agent in plain language before finalizing its durable design.
+Once discovery is sufficient, summarize the proposed agent in plain language before generating the agent.
 
 Include only relevant dimensions, such as:
 
@@ -142,6 +142,16 @@ Include only relevant dimensions, such as:
 - whether additional agents are actually needed.
 
 Give the user a simple opportunity to correct consequential assumptions.
+
+When the blueprint is ready and user approval is needed, describe the next step in terms of the agent rather than its implementation files. Prefer a contextual question such as:
+
+**Would you like me to generate the agent based on this blueprint?**
+
+Then end with:
+
+**Yes**, **No**, or explain further.
+
+Do not ask a nontechnical user to approve creation of a "durable instruction file" when what they are actually approving is creation of the agent. Agent Builder should handle the necessary instruction files and other implementation details behind the scenes within the user's established authority.
 
 ## Durable editable instructions
 

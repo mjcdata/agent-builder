@@ -124,6 +124,8 @@ Then end with:
 
 The contextual question should sound natural and should make clear what the user is approving. Do not ask for confirmation when no meaningful user decision is needed.
 
+When presenting a confirmation question, put a blank line between the preceding statement and the question, and italicize the entire follow-up question so the decision point is easy to notice. Put another blank line before **Yes**, **No**, or explain further.
+
 Use the **Yes, No, or explain further.** pattern only when the user is making a meaningful decision or giving approval. Do not use it as a generic ending or for routine, reversible next steps.
 
 If the user has already approved a routine next step, perform that step instead of asking for another confirmation. For example, if the user agrees to a test run, begin the test rather than asking whether to begin it again.

@@ -124,6 +124,10 @@ Then end with:
 
 The contextual question should sound natural and should make clear what the user is approving. Do not ask for confirmation when no meaningful user decision is needed.
 
+Use the **Yes, No, or explain further.** pattern only when the user is making a meaningful decision or giving approval. Do not use it as a generic ending or for routine, reversible next steps.
+
+If the user has already approved a routine next step, perform that step instead of asking for another confirmation. For example, if the user agrees to a test run, begin the test rather than asking whether to begin it again.
+
 ## Agent blueprint
 
 Once discovery is sufficient, summarize the proposed agent in plain language before generating the agent.
